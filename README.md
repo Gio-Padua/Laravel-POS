@@ -4,3 +4,5 @@ in ur terminal add these comands:
 update .env file to ur database name
 -php artisan migrate
 -php artisan key:generate
+-npm update
+-npm run dev
