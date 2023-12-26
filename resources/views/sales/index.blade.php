@@ -133,7 +133,7 @@
                                 <input type="number"
                                     name="change"
                                     class="form-control"
-                                    placeholder="Reste"
+                                    placeholder="Change"
                                 >
                                 <div class="input-group-append">
                                     <div class="input-group-text">
