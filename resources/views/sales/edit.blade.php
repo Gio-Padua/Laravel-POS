@@ -88,9 +88,9 @@
                                     </option>
                                     @foreach ($servants as $servant)
                                         <option
-                                            {{ $servant->id === $sale->servant_id ? "selected" : "" }}
+                                            {{ $employee->id === $sale->employee_id ? "selected" : "" }}
                                             value="{{ $servant->id }}">
-                                            {{ $servant->name }}
+                                            {{ $employee->name }}
                                         </option>
                                     @endforeach
                                 </select>
@@ -98,7 +98,7 @@
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
-                                        Qté
+                                        Quantity
                                     </div>
                                 </div>
                                 <input type="number"
@@ -147,13 +147,13 @@
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
-                                        $
+                                        Php
                                     </div>
                                 </div>
                                 <input type="number"
                                     name="change"
                                     class="form-control"
-                                    placeholder="Reste"
+                                    placeholder="change"
                                      value="{{ $sale->change }}"
                                 >
                                 <div class="input-group-append">
@@ -182,13 +182,13 @@
                             <div class="form-group">
                                 <select name="payment_status" class="form-control">
                                     <option value="" selected disabled>
-                                        Etat de paiement
+                                        payment_status
                                     </option>
                                     <option value="paid" {{ $sale->payment_status === "paid" ? "selected" : ""}}>
-                                        Payé
+                                        paid
                                     </option>
                                     <option value="unpaid" {{ $sale->payment_status === "unpaid" ? "selected" : ""}}>
-                                        Impayé
+                                        unpaid
                                     </option>
                                 </select>
                             </div>
@@ -199,7 +199,7 @@
                                     "
                                     class="btn btn-primary"
                                 >
-                                    Valider
+                                    Edit
                                 </button>
                             </div>
                         </div>

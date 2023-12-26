@@ -49,7 +49,6 @@ Route::resource('employees', EmployeeController::class);
 Route::resource('payments', PaymentController::class);
 Route::resource('sales', SaleController::class);
 Route::resource('reports', ReportController::class);
-Route::post('menu/edit/{id}',[FoodController::class, 'update']);
 
 
  
