@@ -13,7 +13,7 @@ class Payment extends Model
         "total_received", "change", "payment_type", "payment_status"
     ];
     
-    public function menus()
+    public function foods()
     {
         return $this->belongsToMany(Food::class);
     }

@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('food_sales', function (Blueprint $table) {
+        Schema::create('food_payment', function (Blueprint $table) {
             $table->id();
             $table->foreignId('food_id')->references('id')->on('food'); 
             $table->foreignId('payment_id')->references('id')->on('payments'); 

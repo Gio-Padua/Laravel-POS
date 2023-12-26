@@ -32,7 +32,7 @@
                                 aria-labelledby="pills-home-tab"
                                 >
                                 <div class="row">
-                                    @foreach($categories->foods as $menu)
+                                    @foreach($category->foods as $menu)
                                         <div class="col-md-4 mb-2">
                                             <div class="card h-100">
                                                 <div class="card-body d-flex
@@ -54,7 +54,7 @@
                                                         {{ $menu->title }}
                                                     </h5>
                                                     <h5 class="text-muted">
-                                                        {{ $menu->price }} DH
+                                                        {{ $menu->price }} Php
                                                     </h5>
                                                 </div>
                                             </div>
@@ -67,9 +67,9 @@
                     <div class="row">
                         <div class="col-md-6 mx-auto">
                             <div class="form-group">
-                                <select name="servant_id" class="form-control">
+                                <select name="employee_id" class="form-control">
                                     <option value="" selected disabled>
-                                        Sérveur
+                                        Employee
                                     </option>
                                     @foreach ($servants as $servant)
                                         <option value="{{ $servant->id }}">
@@ -157,13 +157,13 @@
                             <div class="form-group">
                                 <select name="payment_status" class="form-control">
                                     <option value="" selected disabled>
-                                        Etat de paiement
+                                        State of payment
                                     </option>
                                     <option value="paid">
-                                        Payé
+                                        Paid
                                     </option>
                                     <option value="unpaid">
-                                        Impayé
+                                        Unpaid
                                     </option>
                                 </select>
                             </div>
@@ -174,7 +174,7 @@
                                     "
                                     class="btn btn-primary"
                                 >
-                                    Valider
+                                    Add
                                 </button>
                             </div>
                         </div>

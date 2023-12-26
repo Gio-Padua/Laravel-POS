@@ -15,7 +15,7 @@
                         </div>
                         <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center">
                             <i class="fa fa-shopping-bag fa-5x text-primary"></i>
-                            <a href="/payments" class="font-weight-bold btn btn-link">
+                            <a href="/sales" class="font-weight-bold btn btn-link">
                                 Payments
                             </a>
                         </div>
